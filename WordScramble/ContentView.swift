@@ -74,6 +74,11 @@ struct ContentView: View {
             return
         }
 
+        
+        guard isNotStartWord(word: answer) else{
+            wordError(title: "there's no bug here", message: "don't use the start word")
+            return
+        }
       
         guard isPossible(word: answer) else {
             wordError(title: "Word not possible", message: "You can't spell that word from '\(rootWord)'!")
@@ -108,6 +113,10 @@ struct ContentView: View {
         fatalError("could not load start.txt")
         }
     
+            
+            func isNotStartWord(word: String) -> Bool{
+            return word != rootWord
+            }
     
     
     func restartGame()
