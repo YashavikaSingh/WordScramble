@@ -4,7 +4,7 @@
 This app is project 5 of "100 Days of SwiftUI". It has an array of words, one of which will be the root word displayed as the title. 
 The text field takes as input a word which is: 
 
-    1.longer than 2 letters
+    1. longer than 2 letters
     2. a valid english word, which is checked using UITextChecker
     3. not the start word
     4. made of letters from the start word
